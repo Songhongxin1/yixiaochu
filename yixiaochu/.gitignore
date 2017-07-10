@@ -1,0 +1,12 @@
+*uploads*
+*development*
+*production*
+*DS_Store*
+*Test*
+*test*
+hotel.offset
+.project
+.buildpath
+.settings/*
+static/favicon.ico
+*node_modules*

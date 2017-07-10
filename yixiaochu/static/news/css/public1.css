@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; }
+
+html, body { min-height: 100%; width: 100%; font-family: 微软雅黑; font-size: 14px; height: auto; }
+
+input { outline: none; border: none; }
+
+a { color: #424242; text-decoration: none; text-decoration: none; }
+
+ul, ol, li { list-style-type: none; }
+
+img { border: none; }
+
+.l { float: left; }
+
+.r { float: right; }
+
+/*===========================header start======================*/
+.header { width: 100%; height: 88px; position: absolute; top: 0; left: 0; background: #0e1115; z-index: 15; border-top: solid 2px #dca924; }
+
+.header .nav { width: 1200px; height: 90px; margin: 0px auto; }
+
+.header .logo { float: left; width: 220px; height: 88px; background: url(../images/logo_new.png?v=b7bb9) left center no-repeat; }
+
+.header .menu { float: left; margin-top: 20px; }
+
+.header .menu li { float: left; margin-right: 10px; }
+
+.header .menu a { color: #ccc; padding: 10px 25px; display: block; border-radius: 5px; }
+
+.header .menu a:hover, .header .menu a.act { background: #dca924; color: #fff; }
+
+.header .top-search { float: left; margin: 20px 0 0 10px; width: 350px; height: 40px; background: #232930; border-radius: 5px; }
+
+.header .top-search input { float: left; width: 215px; height: 40px; outline: none; border: none; background-color: transparent; border-right: solid 1px #343c46; line-height: 40px; text-indent: 10px; color: #ccc; font-family: 微软雅黑; font-size: 12px; }
+
+.header .top-search .list { float: left; width: 70px; position: relative; height: 40px; cursor: pointer; font-size: 12px; color: #999; text-indent: 15px; line-height: 40px; }
+
+.header .top-search .list .r { color: #637282; }
+
+.header .top-search a { float: right; border-radius: 0 5px 5px 0; width: 57px; height: 40px; display: block; background: #dca924 url(../images/search-but.png?v=7e22d) center center no-repeat; }
+
+.header .top-search ul { position: absolute; top: 40px; width: 100%; background: #232930; display: none; z-index: 25; }
+
+.header .top-search li { text-indent: 15px; width: 100%; font-size: 12px; line-height: 35px; height: 35px; }
+
+.header .top-search li:hover { color: #fff; }
+
+.header .top-search .list:hover ul { display: block; }
+
+.header .right-link { float: right; margin: 10px 3px 0 0; }
+
+.header .right-link a { border-radius: 3px; padding: 5px 15px; display: block; }
+
+.header .right-link .login { color: #ebebeb; background: #767676; }
+
+.header .right-link .reg { color: #fff; background: #00a0e9; margin-top: 8px; }
+
+.header .right-link .user { color: #00a0e9; padding: 3px 8px; border: solid 1px #00a0e9; width: 60px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.header .right-link .logout { color: #fff; background: #00a0e9; margin-top: 8px; text-align: center; width: 50px; }
+
+.header .right-link .login:hover { background: #626262; }
+
+.header .right-link .user:hover { color: #fff; background: #00a0e9; }
+
+.header .right-link .reg:hover, .header .right-link .logout:hover { background: #0590cf; }
+
+/*===========================main start======================*/
+.container { width: 100%; min-height: 100%; background: #f5f5f5; height: auto; overflow: hidden; margin-top: 90px; }
+
+/*===========================footer start======================*/
+.footer { width: 100%; height: 490px; overflow: hidden; background: #0e1115 url(../images/foot.png?v=94919) center bottom no-repeat; }
+
+.footer .foot-nav { width: 1180px; margin: 0px auto; height: auto; overflow: hidden; }
+
+.footer .nav-lists { width: 100%; height: 20px; border-bottom: solid 1px #353839; padding: 25px 0; margin-bottom: 35px; }
+
+.footer ul { float: left; }
+
+.footer ul li { float: left; margin-right: 15px; }
+
+.footer ul li a { display: block; color: #efefef; }
+
+.footer .blue-text { float: right; color: #00a0e9; }
+
+.footer .copy-right { float: left; color: #656768; line-height: 25px; }
+
+.footer .hot { float: right; color: #656768; border: solid 1px #656768; padding: 5px 15px; cursor: pointer; }
+
+.footer .company-con { width: 100%; clear: both; height: auto; overflow: hidden; margin-top: 200px; display: none; }
+
+.footer .company-con.act { display: block; }
+
+.footer .company-con ul { width: 100%; float: none; }
+
+.footer .company-con li { margin-left: 30px; margin-right: 0; }
+
+.footer .company-con img { width: 200px; height: 100px; }

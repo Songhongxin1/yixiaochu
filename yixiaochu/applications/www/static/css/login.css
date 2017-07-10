@@ -1,0 +1,67 @@
+html, body { background: #fff; }
+
+.container { min-height: 500px; }
+
+.login_cont { width: 1000px; margin: 15px auto; }
+
+.advent { float: left; width: 570px; }
+
+.advent img { width: 100%; }
+
+.login_form { float: left; margin-left: 65px; margin-top: 80px; }
+
+.login_form .title { font-size: 18px; color: #333; }
+
+.login_form .input_cont { margin-top: 25px; width: 325px; height: 43px; border: solid 1px #d2d2d2; }
+
+.login_form i { float: left; width: 44px; height: 43px; background-color: #d9d9d9; background-position: center center; background-repeat: no-repeat; }
+
+.login_form i.name { background-image: url(../images/lonig-icon1.png?v=dbbbd); }
+
+.login_form i.password { background-image: url(../images/lonig-icon2.png?v=21075); }
+
+.login_form input { float: left; margin-left: 15px; height: 43px; border: none; background-color: transparent; width: 230px; line-height: 43px; }
+
+.login_form .text { margin-top: 15px; color: #333; }
+
+.login_form .reg { float: right; color: #e44036; }
+
+.login_form .message { height: 25px; line-height: 25px; color: #ff0000; }
+
+.login_form .submit { display: block; width: 327px; height: 45px; background: #f56c65; color: #fff; line-height: 45px; text-align: center; border-radius: 5px; }
+
+.login_form .other { color: #333; margin-top: 20px; line-height: 30px; }
+
+.login_form .other span { float: left; }
+
+.login_form .other a { float: left; display: inline-block; width: 30px; height: 30px; background-image: url(../images/icon.png?v=23bbc); margin-right: 15px; }
+
+.login_form .weibo { background-position: -90px -48px; }
+
+.login_form .qq { background-position: -90px -18px; }
+
+.login_form .weix { background-position: -90px -78px; }
+
+.reg_cont { width: 600px; height: auto; overflow: hidden; margin: 50px auto; }
+
+.reg_cont ul, .reg_cont li { width: 100%; height: auto; overflow: hidden; }
+
+.reg_cont li { margin-bottom: 30px; position: relative; }
+
+.reg_cont label { width: 115px; text-align: right; line-height: 45px; font-size: 16px; color: #333; float: left; }
+
+.reg_cont input { float: left; width: 320px; height: 43px; border: solid 1px #ccc; line-height: 43px; text-indent: 10px; margin-left: 20px; }
+
+.reg_cont .code { padding: 10px 15px; background: #e3e5e6; color: #333; right: 147px; position: absolute; top: 3px; }
+
+.reg_cont .message { height: 25px; line-height: 25px; color: #ff0000; width: 320px; margin: 0 auto; } 
+
+.reg_cont .errormessage { float: left; width:123px; font-size: 13px; line-height: 25px; color: #f56c65; margin: 10px; }
+
+.reg_cont .message span { color: #333; font-size: 12px; }
+
+.reg_cont .message i { width: 16px; height: 16px; background-image: url(../images/icon.png?v=23bbc); background-position: -66px -50px; display: inline-block; margin-right: 5px; }
+
+.reg_cont .message .err { width: 17px; height: 17px; background-image: url(../images/icon.png?v=23bbc); background-position: 43px 0px; display: inline-block; margin-right: 5px; }
+
+.reg_cont .submit { display: block; width: 320px; height: 45px; background: #f56c65; color: #fff; line-height: 45px; text-align: center; border-radius: 5px; margin: 10px auto; }

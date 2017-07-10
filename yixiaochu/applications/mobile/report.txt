@@ -1,0 +1,480 @@
+
+1. Delete the replace:false option and instead wrap your root component with an element similar to the one you're replacing, e.g. el: '#app' with template: '<div id="app"> ... </div>'
+  Line 6: src/App.vue
+  Reason: The replace option has been removed, as it provides too little convenience
+  More info: http://vuejs.org/guide/migration.html#replace-false
+
+2. Switch argument order in v-for="(k, v) in user_addr" to (v, k)
+  Line 7: src/components/address.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+3. Replace transition="modal" attribute with either a <transition name="modal"> or <transition-group name="modal"> wrapper component
+  Line 23: src/components/address.vue
+  Reason: The new and improved transition system requires use of new <transition> and <transition-group> components
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+4. Replace .staggered-transition with .staggered-enter-active, .staggered-leave-active
+  Line 65: src/components/address.vue
+  Reason: v-transition class has been replaced by the standard classes used by Angular and React CSSTransitionGroup
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+5. Replace .staggered-leave with .staggered-leave-active (if it's left over from Vue 1.x)
+  Line 71: src/components/address.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+6. Replace .modal-leave with .modal-leave-active (if it's left over from Vue 1.x)
+  Line 105: src/components/address.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+7. Replace .modal-leave with .modal-leave-active (if it's left over from Vue 1.x)
+  Line 109: src/components/address.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+8. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 176: src/components/address.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+9. Update class="{{css_pay.page_main}} {{css_public.page_main}}" to use v-bind with a computed property
+  Line 6: src/components/allpay.vue
+  Reason: Interpolation within attributes has been removed
+  More info: http://vuejs.org/guide/migration.html#Interpolation-within-Attributes
+
+10. Replace v-bind:menus.sync="menus" with v-bind:menus="menus", then $emit an event from the child component to trigger an update to menus in the parent
+  Line 27: src/components/allpay.vue
+  Reason: v-bind.sync and v-bind.once have removed to enforce one-way down props, leaving side effects to more explicit component events
+  More info: http://vuejs.org/guide/migration.html#v-bind-with-once-and-sync-Modifiers
+
+11. Replace this.$set('user_info.head_img_url', response.full_url) with this.$set(this.user_info, 'head_img_url', response.full_url)
+  Line 85: src/components/change_pwd.vue
+  Reason: vm.$set is now just an alias for Vue.set
+  More info: http://vuejs.org/guide/migration.html#vm-set
+
+12. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 105: src/components/change_pwd.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+13. Replace router.go with router.push
+  Line 164: src/components/change_pwd.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+14. Update src="{{menus_list[0].cover_img}}" to v-bind:src="menus_list[0].cover_img"
+  Line 6: src/components/combo_detail.vue
+  Reason: Interpolation within attributes has been removed
+  More info: http://vuejs.org/guide/migration.html#Interpolation-within-Attributes
+
+15. Switch argument order in v-for="(k,v) in menus_list[0].foods" to (v, k)
+  Line 8: src/components/combo_detail.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+16. Switch argument order in v-for="(k,v) in menus_list[0].foods" to (v, k)
+  Line 20: src/components/combo_detail.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+17. Replace .staggered-transition with .staggered-enter-active, .staggered-leave-active
+  Line 42: src/components/combo_detail.vue
+  Reason: v-transition class has been replaced by the standard classes used by Angular and React CSSTransitionGroup
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+18. Replace .staggered-leave with .staggered-leave-active (if it's left over from Vue 1.x)
+  Line 48: src/components/combo_detail.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+19. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 111: src/components/combo_detail.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+20. Replace .calendar-leave with .calendar-leave-active (if it's left over from Vue 1.x)
+  Line 13: src/components/common/calendar.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+21. Replace transition="calendar" attribute with either a <transition name="calendar"> or <transition-group name="calendar"> wrapper component
+  Line 169: src/components/common/calendar.vue
+  Reason: The new and improved transition system requires use of new <transition> and <transition-group> components
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+22. Update value="{{year}}" to v-bind:value="year"
+  Line 179: src/components/common/calendar.vue
+  Reason: Interpolation within attributes has been removed
+  More info: http://vuejs.org/guide/migration.html#Interpolation-within-Attributes
+
+23. Update value="{{hour}}" to v-bind:value="hour"
+  Line 204: src/components/common/calendar.vue
+  Reason: Interpolation within attributes has been removed
+  More info: http://vuejs.org/guide/migration.html#Interpolation-within-Attributes
+
+24. Update value="{{minute}}" to v-bind:value="minute"
+  Line 206: src/components/common/calendar.vue
+  Reason: Interpolation within attributes has been removed
+  More info: http://vuejs.org/guide/migration.html#Interpolation-within-Attributes
+
+25. Update value="{{second}}" to v-bind:value="second"
+  Line 208: src/components/common/calendar.vue
+  Reason: Interpolation within attributes has been removed
+  More info: http://vuejs.org/guide/migration.html#Interpolation-within-Attributes
+
+26. Delete twoWay: true, then $emit an event from the child component to trigger an update to the prop in the parent
+  Line 224: src/components/common/calendar.vue
+  Reason: Two-way prop binding has been removed in favor of more explicit event-driven communication between parent and child
+  More info: http://vuejs.org/guide/migration.html#twoWay-Prop-Option
+
+27. Delete twoWay: true, then $emit an event from the child component to trigger an update to the prop in the parent
+  Line 233: src/components/common/calendar.vue
+  Reason: Two-way prop binding has been removed in favor of more explicit event-driven communication between parent and child
+  More info: http://vuejs.org/guide/migration.html#twoWay-Prop-Option
+
+28. Delete twoWay: true, then $emit an event from the child component to trigger an update to the prop in the parent
+  Line 246: src/components/common/calendar.vue
+  Reason: Two-way prop binding has been removed in favor of more explicit event-driven communication between parent and child
+  More info: http://vuejs.org/guide/migration.html#twoWay-Prop-Option
+
+29. Delete twoWay: true, then $emit an event from the child component to trigger an update to the prop in the parent
+  Line 267: src/components/common/calendar.vue
+  Reason: Two-way prop binding has been removed in favor of more explicit event-driven communication between parent and child
+  More info: http://vuejs.org/guide/migration.html#twoWay-Prop-Option
+
+30. Replace init with beforeCreate
+  Line 325: src/components/common/calendar.vue
+  Reason: init lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#init
+
+31. Replace transition="expand" attribute with either a <transition name="expand"> or <transition-group name="expand"> wrapper component
+  Line 7: src/components/common/footer.vue
+  Reason: The new and improved transition system requires use of new <transition> and <transition-group> components
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+32. Replace .expand-transition with .expand-enter-active, .expand-leave-active
+  Line 16: src/components/common/footer.vue
+  Reason: v-transition class has been replaced by the standard classes used by Angular and React CSSTransitionGroup
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+33. Replace .expand-leave with .expand-leave-active (if it's left over from Vue 1.x)
+  Line 21: src/components/common/footer.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+34. Replace .expand-leave with .expand-leave-active (if it's left over from Vue 1.x)
+  Line 22: src/components/common/footer.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+35. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 63: src/components/common/footer.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+36. Replace router.go with router.push
+  Line 40: src/components/common/header.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+37. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 46: src/components/common/header.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+38. Update class="{{css_public.mymenu}} {{show_menus ? css_public.act : ''}}" to use v-bind with a computed property
+  Line 2: src/components/common/mymenu.vue
+  Reason: Interpolation within attributes has been removed
+  More info: http://vuejs.org/guide/migration.html#Interpolation-within-Attributes
+
+39. Switch argument order in v-for="(k,v) of menus" to (v, k)
+  Line 10: src/components/common/mymenu.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+40. Update value="{{v.id}}" to v-bind:value="v.id"
+  Line 11: src/components/common/mymenu.vue
+  Reason: Interpolation within attributes has been removed
+  More info: http://vuejs.org/guide/migration.html#Interpolation-within-Attributes
+
+41. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 35: src/components/common/mymenu.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+42. Replace v-link="'user_order'" with the new <router-link> component (see link below for details)
+  Line 10: src/components/common/userhead.vue
+  Reason: The v-link directive has been replaced with the new <router-link> component
+  More info: http://vuejs.org/guide/migration-vue-router.html#v-link
+
+43. Replace v-link="'user_point'" with the new <router-link> component (see link below for details)
+  Line 11: src/components/common/userhead.vue
+  Reason: The v-link directive has been replaced with the new <router-link> component
+  More info: http://vuejs.org/guide/migration-vue-router.html#v-link
+
+44. Replace v-link="'userinfo'" with the new <router-link> component (see link below for details)
+  Line 12: src/components/common/userhead.vue
+  Reason: The v-link directive has been replaced with the new <router-link> component
+  More info: http://vuejs.org/guide/migration-vue-router.html#v-link
+
+45. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 28: src/components/common/userhead.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+46. Switch argument order in v-for="(k,v) in manual_list" to (v, k)
+  Line 8: src/components/home.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+47. Switch argument order in v-for="(k,v) in manual_list" to (v, k)
+  Line 19: src/components/home.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+48. Switch argument order in v-for="(k,v) in foods_type" to (v, k)
+  Line 35: src/components/home.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+49. Switch argument order in v-for="(k,v) in menus_cate" to (v, k)
+  Line 46: src/components/home.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+50. Switch argument order in v-for="(k,v) in menus_cate" to (v, k)
+  Line 57: src/components/home.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+51. Switch argument order in v-for="(k,v) in current_menus_list" to (v, k)
+  Line 65: src/components/home.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+52. Switch argument order in v-for="(k,v) in foods" to (v, k)
+  Line 96: src/components/home.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+53. Replace .staggered-transition with .staggered-enter-active, .staggered-leave-active
+  Line 117: src/components/home.vue
+  Reason: v-transition class has been replaced by the standard classes used by Angular and React CSSTransitionGroup
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+54. Replace .staggered-leave with .staggered-leave-active (if it's left over from Vue 1.x)
+  Line 123: src/components/home.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+55. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 204: src/components/home.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+56. Replace router.go with router.push
+  Line 339: src/components/home.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+57. Replace router.go with router.push
+  Line 341: src/components/home.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+58. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 34: src/components/login.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+59. Replace router.go with router.push
+  Line 38: src/components/login.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+60. Replace router.go with router.push
+  Line 68: src/components/login.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+61. Replace {{{codeTips}}} with v-html="codeTips" on a containing element
+  Line 19: src/components/reg.vue
+  Reason: HTML interpolation with {{{ }}} has been removed
+  More info: http://vuejs.org/guide/migration.html#HTML-Interpolation
+
+62. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 52: src/components/reg.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+63. Replace router.go with router.push
+  Line 56: src/components/reg.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+64. Replace router.go with router.push
+  Line 99: src/components/reg.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+65. Switch argument order in v-for="(k, v) in shopping_car.combo" to (v, k)
+  Line 6: src/components/shopping_car.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+66. Switch argument order in v-for="(k, v) in shopping_car.single" to (v, k)
+  Line 20: src/components/shopping_car.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+67. Replace {{{v.now_price}}} with v-html="v.now_price" on a containing element
+  Line 26: src/components/shopping_car.vue
+  Reason: HTML interpolation with {{{ }}} has been removed
+  More info: http://vuejs.org/guide/migration.html#HTML-Interpolation
+
+68. Switch argument order in v-for="(k, v) in user_addr" to (v, k)
+  Line 36: src/components/shopping_car.vue
+  Reason: Argument order for v-for has been updated to match JavaScript conventions
+  More info: http://vuejs.org/guide/migration.html#v-for-Argument-Order-for-Arrays
+
+69. Replace transition="modal" attribute with either a <transition name="modal"> or <transition-group name="modal"> wrapper component
+  Line 47: src/components/shopping_car.vue
+  Reason: The new and improved transition system requires use of new <transition> and <transition-group> components
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+70. Replace transition="modal" attribute with either a <transition name="modal"> or <transition-group name="modal"> wrapper component
+  Line 80: src/components/shopping_car.vue
+  Reason: The new and improved transition system requires use of new <transition> and <transition-group> components
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+71. Replace .staggered-transition with .staggered-enter-active, .staggered-leave-active
+  Line 122: src/components/shopping_car.vue
+  Reason: v-transition class has been replaced by the standard classes used by Angular and React CSSTransitionGroup
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+72. Replace .staggered-leave with .staggered-leave-active (if it's left over from Vue 1.x)
+  Line 128: src/components/shopping_car.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+73. Replace .modal-leave with .modal-leave-active (if it's left over from Vue 1.x)
+  Line 162: src/components/shopping_car.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+74. Replace .modal-leave with .modal-leave-active (if it's left over from Vue 1.x)
+  Line 166: src/components/shopping_car.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+75. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 251: src/components/shopping_car.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+76. Replace router.go with router.push
+  Line 323: src/components/shopping_car.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+77. Replace router.go with router.push
+  Line 334: src/components/shopping_car.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+78. Replace router.go with router.push
+  Line 336: src/components/shopping_car.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+79. Replace .staggered-transition with .staggered-enter-active, .staggered-leave-active
+  Line 28: src/components/single_detail.vue
+  Reason: v-transition class has been replaced by the standard classes used by Angular and React CSSTransitionGroup
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+80. Replace .staggered-leave with .staggered-leave-active (if it's left over from Vue 1.x)
+  Line 34: src/components/single_detail.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+81. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 97: src/components/single_detail.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+82. Replace .staggered-transition with .staggered-enter-active, .staggered-leave-active
+  Line 26: src/components/user.vue
+  Reason: v-transition class has been replaced by the standard classes used by Angular and React CSSTransitionGroup
+  More info: http://vuejs.org/guide/migration.html#transition-Attribute
+
+83. Replace .staggered-leave with .staggered-leave-active (if it's left over from Vue 1.x)
+  Line 32: src/components/user.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+84. Replace .modal-leave with .modal-leave-active (if it's left over from Vue 1.x)
+  Line 67: src/components/user.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+85. Replace .modal-leave with .modal-leave-active (if it's left over from Vue 1.x)
+  Line 71: src/components/user.vue
+  Reason: v-leave class now defines a starting state for leave transitions, rather than the ending state
+  More info: http://vuejs.org/guide/migration.html#Transitions
+
+86. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 104: src/components/user.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+87. Replace router.go with router.push
+  Line 134: src/components/user.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+88. Replace this.$set('user_info.head_img_url', response.full_url) with this.$set(this.user_info, 'head_img_url', response.full_url)
+  Line 136: src/components/userinfo.vue
+  Reason: vm.$set is now just an alias for Vue.set
+  More info: http://vuejs.org/guide/migration.html#vm-set
+
+89. Replace ready with mounted, then use Vue.nextTick if you need an in-document guarantee
+  Line 156: src/components/userinfo.vue
+  Reason: ready lifecycle hook has been removed
+  More info: http://vuejs.org/guide/migration.html#ready
+
+90. Replace router.go with router.push
+  Line 213: src/components/userinfo.vue
+  Reason: For consistency with the HTML5 History API, router.go is now only used for back/forward navigation, while router.push is used to navigate to a specific page
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-go
+
+91. Delete references to Vue.config.async
+  Line 12: src/main.js
+  Reason: Async is now always required for performance
+  More info: http://vuejs.org/guide/migration.html#Vue-config-async
+
+92. Remove the hashbang option
+  Line 15: src/main.js
+  Reason: Hashbangs are no longer required for Google to crawl a URL, so they are no longer the default (or even an option) for the hash strategy
+  More info: http://vuejs.org/guide/migration-vue-router.html#hashbang-false
+
+93. Replace history:true with mode:'history'
+  Line 16: src/main.js
+  Reason: All router modes (e.g. history, hash, abstract) are now set through the new mode option
+  More info: http://vuejs.org/guide/migration-vue-router.html#history-true
+
+94. Replace router.map with an array on the new routes option (see link below for details)
+  Line 20: src/main.js
+  Reason: Routes are now defined as an array on a routes option at router instantiation
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-map
+
+95. Replace router.redirect with a redirect option in a route definition (see link below for details)
+  Line 141: src/main.js
+  Reason: Redirects have been moved to an option on route definitions to improve config organization
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-redirect
+
+96. Replace router.start with router: router on your root Vue instance (see link below for details)
+  Line 144: src/main.js
+  Reason: Starting an app with routing no longer requires a special method - the router can simply be passed to the root Vue instance as option
+  More info: http://vuejs.org/guide/migration-vue-router.html#router-start

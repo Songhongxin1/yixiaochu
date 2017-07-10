@@ -1,0 +1,107 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; }
+
+html, body { min-height: 100%; width: 100%; font-family: 微软雅黑; font-size: 14px; height: auto; }
+
+input { outline: none; border: none; }
+
+a { color: #424242; text-decoration: none; text-decoration: none; }
+
+ul, ol, li { list-style-type: none; }
+
+img { border: none; }
+
+.l { float: left; }
+
+.r { float: right; }
+
+/*===========================header start======================*/
+.header { width: 100%; height: 90px; position: absolute; top: 0; left: 0; background: #fff; z-index: 10; }
+
+.header .nav { width: 1180px; height: 90px; margin: 0px auto; }
+
+.header .logo { float: left; width: 265px; height: 74px; background: url(../images/logo.png?v=8714c); margin-top: 7px; }
+
+.header .menu { height: 90px; display: block; width: auto; overflow: hidden; float: left; margin-left: 40px; }
+
+.header .menu ul { list-style: none; padding: 0; margin: 0; }
+
+.header .menu ul li { float: left; overflow: hidden; position: relative; line-height: 90px; text-align: center; }
+
+.header .menu ul li.active a { color: #fff; background-color: #f39b03; }
+
+.header .menu ul li a { position: relative; display: block; width: 130px; height: 90px; font-size: 14px; text-decoration: none; cursor: pointer; color: #666; text-align: center; }
+
+.header .menu ul li a span { position: absolute; left: 0; width: 130px; }
+
+.header .menu ul li a.width1 { width: 90px; }
+
+.header .menu ul li a.width1 span { width: 90px; }
+
+.header .menu ul li a.width2 { width: 140px; }
+
+.header .menu ul li a.width2 span { width: 140px; }
+
+.header .menu ul li a span.out { top: 0px; }
+
+.header .menu ul li a span.over, .header .menu ul li a span.bg { top: -90px; }
+
+.header .menu ul li a span.over { color: #fff; background-color: #f39b03; }
+
+.header .other-link { float: left; margin: 20px 0 0 50px; }
+
+.header .other-link .vip { font-size: 16px; color: #00a0e9; display: block; }
+
+.header .other-link .join { font-size: 16px; color: #f18a1b; display: block; }
+
+.header .other-link .vip:hover { color: #f18a1b; }
+
+.header .other-link .join:hover { color: #00a0e9; }
+
+.header .right-link { float: right; margin: 10px 3px 0 0; }
+
+.header .right-link .login { color: #ebebeb; padding: 5px 15px; background: #767676; display: block; }
+
+.header .right-link .reg { color: #fff; padding: 5px 15px; background: #00a0e9; display: block; margin-top: 8px; }
+
+.header .right-link .user { color: #00a0e9; padding: 3px 13px; display: block; border: solid 1px #00a0e9; max-width: 60px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.header .right-link .logout { color: #fff; padding: 5px 15px; background: #00a0e9; display: block; margin-top: 8px; text-align: center; }
+
+.header .right-link .login:hover { background: #626262; }
+
+.header .right-link .user:hover { color: #fff; background: #00a0e9; }
+
+.header .right-link .reg:hover, .header .right-link .logout:hover { background: #0590cf; }
+
+/*===========================main start======================*/
+.container { width: 100%; min-height: 100%; background: #f5f5f5; height: auto; overflow: hidden; margin-top: 90px; }
+
+/*===========================footer start======================*/
+.footer { width: 100%; height: 490px; overflow: hidden; background: #0e1115 url(../images/foot.png?v=94919) center bottom no-repeat; }
+
+.footer .foot-nav { width: 1180px; margin: 0px auto; height: auto; overflow: hidden; }
+
+.footer .nav-lists { width: 100%; height: 20px; border-bottom: solid 1px #353839; padding: 25px 0; margin-bottom: 35px; }
+
+.footer ul { float: left; }
+
+.footer ul li { float: left; margin-right: 15px; }
+
+.footer ul li a { display: block; color: #efefef; }
+
+.footer .blue-text { float: right; color: #00a0e9; }
+
+.footer .copy-right { float: left; color: #656768; line-height: 25px; }
+
+.footer .hot { float: right; color: #656768; border: solid 1px #656768; padding: 5px 15px; cursor: pointer; }
+
+.footer .company-con { width: 100%; clear: both; height: auto; overflow: hidden; margin-top: 200px; display: none; }
+
+.footer .company-con.act { display: block; }
+
+.footer .company-con ul { width: 100%; float: none; }
+
+.footer .company-con li { margin-left: 30px; margin-right: 0; }
+
+.footer .company-con img { width: 200px; height: 100px; }

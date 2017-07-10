@@ -1,0 +1,81 @@
+.page_main { margin-bottom: 80px; }
+
+.weather { width: 21px; height: 21px; background-image: url(../images/icon.png?v=23bbc); background-position: 0 -48px; display: inline-block; }
+
+.banner { width: 100%; height: 200px; background: url(../images/today.jpg?v=206de); }
+
+.banner .cont { width: 1200px; height: 100%; margin: 0 auto; color: #666; }
+
+.banner .tip { float: right; margin-top: 70px; padding: 12px 30px; background: #fff; border-radius: 5px; cursor: pointer; position: relative; line-height: 21px; }
+
+.banner .addres { float: left; }
+
+.banner ul { position: absolute; top: 43px; background: #fff; left: 15px; display: none; }
+
+.banner ul.act { display: block; }
+
+.banner li { line-height: 35px; padding: 0 15px; border-bottom: dashed 1px #ccc; }
+
+.banner p { float: left; margin-left: 15px; }
+
+.banner i { float: left; margin-right: 5px; }
+
+.page_title { width: 100%; margin-top: 45px; font-size: 24px; color: #333; line-height: 25px; }
+
+.page_title span { font-size: 14px; color: #666; margin-left: 20px; }
+
+.today_lists { width: 1240px; height: auto; overflow: hidden; margin-bottom: 50px; }
+
+.today_lists li { float: left; margin: 40px 40px 0 0; width: 270px; background: #fff; height: 300px; cursor: pointer; }
+
+.today_lists img { width: 100%; height: 240px; }
+
+.today_lists .bot { position: relative; width: 100%; height: 56px; overflow: hidden; text-indent: 20px; line-height: 56px; color: #666; }
+
+.today_lists .price { font-size: 20px; color: #f56c65; position: absolute; right: 20px; top: 0; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+
+.today_lists .join { position: absolute; right: 10px; top: 56px; display: block; color: #fff; line-height: 20px; border: solid 1px #fff; border-radius: 3px; width: 80px; text-align: center; text-indent: 0; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+
+.today_lists li:hover { background: #f56c65; }
+
+.today_lists li:hover .bot { color: #fff; }
+
+.today_lists li:hover .price { top: -56px; }
+
+.today_lists li:hover .join { top: 15px; }
+
+.list_detail { position: fixed; width: 960px; height: 510px; top: -100%; left: 50%; margin: -275px 0 0 -500px; z-index: 10; padding: 20px; background: #fff; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+
+.list_detail .close { position: absolute; top: 0; right: 0; cursor: pointer; width: 26px; height: 26px; background: url(../images/close.png?v=a52c0); }
+
+.list_detail img { height: 100%; width: 580px; float: left; }
+
+.list_detail .brife { float: left; margin-left: 30px; width: 345px; }
+
+.list_detail .title { width: 100%; height: 60px; line-height: 60px; border-bottom: solid 1px #ccc; font-size: 18px; color: #666; }
+
+.list_detail .title span { float: right; color: #f56c65; }
+
+.list_detail .cont { width: 100%; height: 405px; overflow-x: hidden; overflow-y: auto; color: #666; }
+
+.list_detail .l_text { line-height: 25px; float: left; width: 80px; text-align: right; margin-top: 15px; }
+
+.list_detail .r_text { float: left; width: 245px; margin-left: 10px; line-height: 25px; margin-top: 15px; }
+
+.list_detail .link { width: 100%; height: 35px; margin-top: 10px; }
+
+.list_detail .link p { float: left; line-height: 35px; font-size: 12px; color: #999; }
+
+.list_detail .link span { color: #f56c65; }
+
+.list_detail .buy { float: right; height: 35px; width: 100px; border-radius: 5px; background: #f56c65; text-align: center; line-height: 35px; color: #fff; display: block; }
+
+.list_detail.act { top: 50%; }
+
+.page_bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/opacity.png?v=a25cb); z-index: 5; display: none; }
+
+.page_bg.act { display: block; }
+
+#msg { position: fixed; top: 300px; right: 35px; z-index: 100; width: 1px; height: 52px; line-height: 52px; font-size: 20px; text-align: center; color: #fff; background: #f56c65; display: none; }
+
+.u_flyer { display: block; width: 50px; height: 50px; border-radius: 50px; position: fixed; z-index: 99; }

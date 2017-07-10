@@ -1,0 +1,45 @@
+/*start d_scree*/
+.dm { width: 100%; height: 700px; }
+
+.dm .d_screen .d_mask { width: 100%; height: 700px; position: absolute; top: 0; left: 0; background: url(../images/scoff.jpg?v=1d4ac); z-index: 1; }
+
+.dm .d_screen .d_show { position: relative; z-index: 2; }
+
+.dm .d_screen .d_show div { font-size: 16px; line-height: 50px; color: #fff; position: absolute; left: 0; top: 0; }
+
+.dm .d_screen .d_show img { width: 50px; height: 50px; border-radius: 50%; float: left; }
+
+.dm .d_screen .d_show span { float: left; margin-left: 15px; }
+
+/*end d_scree*/
+/*.send start*/
+.send { width: 550px; height: 700px; position: absolute; top: 0; right: 0; z-index: 5; }
+
+.send .s_fiter { width: 550px; height: 700px; background: #412b4b; position: absolute; top: 0; right: 0; }
+
+.send .s_con { width: 550px; height: 95px; position: absolute; bottom: 0; right: 0; z-index: 2; text-align: center; border-top: solid 1px #2a1335; }
+
+.send .s_con .s_txt { width: 355px; height: 40px; border-radius: 4px; outline: none; float: left; margin-left: 20px; margin-top: 30px; text-indent: 10px; }
+
+.send .s_con .s_sub { width: 80px; height: 40px; background: #f56c65; border: 0; outline: none; color: #fff; cursor: pointer; border-radius: 4px; float: left; margin-left: 20px; margin-top: 30px; }
+
+.send .s_con i { display: inline-block; width: 33px; height: 32px; background-image: url(../images/icon.png?v=23bbc); background-position: -90px -108px; float: left; margin-left: 20px; margin-top: 34px; }
+
+.s_cont { position: absolute; width: 550px; height: 603px; top: 0; right: 0; border-bottom: solid 1px #593e66; overflow-x: hidden; overflow-y: auto; }
+
+.s_cont ul { width: 100%; height: auto; overflow: hidden; }
+
+.s_cont li { width: 100%; height: auto; overflow: hidden; margin-top: 35px; }
+
+.s_cont label { float: left; width: 90px; line-height: 30px; text-align: right; color: #f56c65; }
+
+.s_cont p { float: left; width: 380px; margin-left: 30px; }
+
+.s_cont span { float: left; padding: 5px 10px; background: #5a4364; color: #fff; border-radius: 3px; cursor: pointer; margin: 0 20px 10px 0; font-size: 12px; }
+
+.s_cont span:hover { background: #f56c65; }
+
+/*.send end*/
+.scoff_title { font-size: 24px; color: #333; margin-top: 40px; margin-bottom: 30px; }
+
+.scoff_text { color: #666; line-height: 25px; }

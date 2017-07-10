@@ -1,0 +1,290 @@
+@charset "UTF-8";
+.page_main { margin: 40px auto; }
+
+.pay_title { width: 100%; font-size: 24px; color: #333; }
+
+.pay_stitle { width: 100%; color: #666; margin-top: 10px; }
+
+.result_cont { width: 100%; height: auto; overflow: hidden; background: #fff; margin-bottom: 30px; }
+
+.result_cont .title { width: 100%; height: 50px; border-bottom: solid 1px #ccc; }
+
+.result_cont .head { float: left; line-height: 50px; margin-left: 40px; font-size: 20px; color: #333; }
+
+.result_cont .icon { float: left; margin-left: 10px; color: #fff; background: #f56c65; padding: 2px 6px; border-radius: 3px; margin-top: 16px; font-size: 12px; }
+
+.result_cont .text { float: left; margin-left: 20px; line-height: 50px; color: #666; }
+
+.result_cont span { color: #f56c65; }
+
+.result_cont .r_text { float: right; line-height: 50px; font-size: 12px; color: #7d7d7d; margin-right: 40px; }
+
+.result_cont .left_cont { float: left; margin: 40px 0; height: 300px; width: 369px; border-right: solid 1px #ccc; text-align: center; }
+
+.result_cont .left_cont img { margin-top: 50px; }
+
+.result_cont .left_cont p { margin-top: 30px; font-size: 16px; color: #666; line-height: 16px; }
+
+.result_cont .left_cont .suce { width: 16px; height: 16px; background-image: url(../images/icon.png?v=23bbc); background-position: -66px -50px; display: inline-block; margin-right: 5px; }
+
+.result_cont .left_cont .share_cont { margin-top: 15px; height: 38px; line-height: 38px; }
+
+.result_cont .share_cont span { float: left; margin-left: 50px; font-size: 12px; color: #666; }
+
+.result_cont .right_cont { float: left; margin-left: 115px; width: 550px; margin-top: 40px; }
+
+.result_cont .l_text { float: left; width: 80px; text-align: right; color: #666; line-height: 25px; margin-bottom: 10px; }
+
+.result_cont .r_cont { float: left; margin-left: 10px; width: 460px; color: #666; line-height: 25px; margin-bottom: 10px; }
+
+.result_cont .r_cont p { width: 100%; clear: both; margin-bottom: 5px; }
+
+.result_cont ul { width: 100%; height: auto; overflow: hidden; }
+
+.result_cont li { float: left; margin-right: 20px; width: auto; text-align: center; line-height: 15px; margin-bottom: 5px; font-size: 12px; }
+
+.result_cont li img { width: 40px; height: 40px; border-radius: 50%; }
+
+.result_cont li p { clear: both; width: 100%; }
+
+.result_cont .qq { width: 38px; height: 38px; background-image: url(../images/icon.png?v=23bbc); background-position: 0 -69px; display: inline-block; float: left; margin-right: 20px; }
+
+.result_cont .weix { width: 38px; height: 38px; background-image: url(../images/icon.png?v=23bbc); background-position: -38px -69px; display: inline-block; float: left; }
+
+.wait .left_cont img { margin-top: 5px; }
+
+.wait .left_cont a { display: block; width: 120px; height: 40px; background: #f56c65; text-align: center; line-height: 40px; margin: 0 auto; margin-top: 35px; border-radius: 5px; color: #fff; }
+
+.pay_lists { width: 1120px; height: auto; overflow: hidden; background: #fff; padding: 0 40px; margin-top: 30px; }
+
+.pay_lists li { width: 100%; padding-bottom: 40px; margin-top: 40px; border-bottom: solid 1px #ccc; height: auto; overflow: hidden; }
+
+.pay_lists img { width: 240px; height: 215px; float: left; }
+
+.pay_lists .info { float: left; margin-left: 40px; width: 840px; }
+
+.pay_lists .title { line-height: 40px; font-size: 18px; color: #333; width: 100%; }
+
+.pay_lists .title span { color: #999; font-size: 14px; margin-left: 20px; }
+
+.pay_lists .cont { width: 100%; height: 140px; overflow-x: hidden; overflow-y: auto; margin-top: 10px; line-height: 30px; }
+
+.pay_lists .l_text { float: left; width: 75px; text-align: right; color: #666; }
+
+.pay_lists .r_text { float: left; width: 750px; margin-left: 15px; color: #333; }
+
+.pay_lists .bot { width: 100%; line-height: 20px; font-size: 12px; color: #999; height: 20px; }
+
+.pay_lists span { color: #49c29d; }
+
+/*支付结果*/
+.pay_result { width: 100%; min-height: 760px; height: auto; background: #fff; margin-top: 20px; color: #666; }
+
+.pay_result .top_text { width: 1120px; padding: 20px 40px; height: auto; border-bottom: solid 1px #ccc; line-height: 25px; }
+
+.pay_result .left_cont { float: left; margin-top: 60px; margin-left: 40px; width: 420px; height: 200px; border-right: solid 1px #ccc; text-align: center; }
+
+.pay_result .left_cont img { width: 162px; height: 162px; }
+
+.pay_result .left_cont p { margin-top: 10px; }
+
+.pay_result .right_cont { float: left; margin-top: 60px; margin-left: 100px; max-width: 530px; }
+
+.pay_result .title { font-size: 18px; color: #49c29d; line-height: 50px; }
+
+.pay_result .right_cont p { margin-bottom: 10px; line-height: 25px; }
+
+.pay_result .t_grey { color: #999; }
+
+.pay_result .t_green { color: #49c29d; }
+
+.pay_result .t_center { text-align: center; }
+
+/*套餐详情*/
+.detail_cont { width: 1120px; height: auto; overflow: hidden; background: #fff; padding: 40px; margin-bottom: 30px; }
+
+.detail_right { float: left; margin-left: 60px; width: 540px; }
+
+.detail_right .title { font-size: 20px; color: #333; line-height: 45px; }
+
+.detail_right .title span { font-size: 14px; color: #999; margin-left: 40px; }
+
+.detail_right .lists { width: 100%; height: auto; overflow: hidden; margin-top: 5px; height: 48px; }
+
+.detail_right .lists li { float: left; margin: 5px 10px 0 0; color: #666; }
+
+.detail_right .price_cont { width: 100%; margin-top: 25px; background: #eee; height: 100px; color: #666; }
+
+.detail_right .text { float: left; line-height: 50px; margin-left: 20px; }
+
+.detail_right .price { font-size: 36px; color: #e44036; line-height: 50px; float: left; }
+
+.detail_right .num { float: right; text-align: center; margin-right: 30px; margin-top: 10px; }
+
+.detail_right .num span { font-size: 30px; color: #999; line-height: 50px; }
+
+.detail_right .cont_list { width: 100%; height: auto; overflow: hidden; margin-top: 35px; }
+
+.detail_right .cont_list li { width: 100%; margin-bottom: 30px; line-height: 30px; color: #666; height: 30px; }
+
+.detail_right label { float: left; width: 70px; }
+
+.detail_right .cont_list p { float: left; color: #333; }
+
+.detail_right select { float: left; height: 30px; width: 270px; line-height: 30px; text-indent: 5px; border: solid 1px #ccc; }
+
+.detail_right input { float: left; height: 28px; width: 50px; line-height: 28px; border-top: solid 1px #ccc; border-bottom: solid 1px #ccc; text-align: center; }
+
+.detail_right .but { float: left; width: 28px; height: 28px; border: solid 1px #ccc; background: #f3f3f3; text-align: center; line-height: 26px; color: #999; font-weight: bold; font-size: 20px; }
+
+.detail_right .but_cont { margin-top: 30px; }
+
+.detail_right .but_cont a { display: block; float: left; width: 200px; height: 55px; border-radius: 5px; margin-right: 40px; text-align: center; line-height: 55px; color: #fff; background: #f56c65; }
+
+.detail_right .but_cont .act { background: #49c29d; }
+
+.detail_left { width: 500px; overflow: hidden; float: left; }
+
+.large_box { margin-bottom: 10px; width: 500px; height: 445px; overflow: hidden; }
+
+.large_box img { display: block; width: 500px; height: 445px; }
+
+.small_box { width: 500px; height: 89px; overflow: hidden; }
+
+.small_list { position: relative; float: left; width: 440px; height: 89px; overflow: hidden; }
+
+.small_list ul { height: 89px; overflow: hidden; }
+
+.small_list ul li { position: relative; float: left; margin-right: 10px; width: 100px; }
+
+.small_list ul li img { display: block; width: 100px; height: 89px; }
+
+.small_list ul li .bun_bg { display: none; position: absolute; top: 0; left: 0; width: 100px; height: 89px; background: #000; filter: alpha(opacity=60); -moz-opacity: 0.6; -khtml-opacity: 0.6; opacity: 0.6; }
+
+.small_list ul li.on .bun_bg { display: block; }
+
+.btn { display: block; width: 25px; height: 89px; background-image: url(../images/arrow.jpg?v=37f02); cursor: pointer; }
+
+.left_btn { float: left; margin-right: 10px; }
+
+.right_btn { float: right; background-position: -25px 0; }
+
+.popup_login { position: fixed; z-index: 10; width: 360px; height: 430px; left: 50%; top: -100%; margin: -215px 0 0 -180px; background: #fff; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+
+.popup_login .title { width: 100%; height: 70px; line-height: 70px; text-align: center; border-bottom: solid 1px #ccc; font-size: 20px; color: #333; }
+
+.popup_login ul { width: 280px; padding: 40px; height: auto; padding-bottom: 0; }
+
+.popup_login li { width: 100%; height: auto; overflow: hidden; margin-bottom: 20px; line-height: 35px; }
+
+.popup_login input { height: 33px; width: 207px; border: solid 1px #ccc; background: #f4f4f4; line-height: 33px; text-indent: 8px; margin-left: 15px; }
+
+.popup_login .code { float: right; padding: 6px 8px; background: #ebebeb; font-size: 12px; color: #333; line-height: 12px; }
+
+.popup_login .message { line-height: 35px; width: 100%; clear: both; text-align: center; color: #ff0000; }
+
+.popup_login .submit { display: block; width: 200px; height: 35px; margin: 0 auto; background: #f56c65; color: #fff; line-height: 35px; text-align: center; border-radius: 5px; }
+
+.popup_login.weix { text-align: center; }
+
+.popup_login.weix .title { color: #22ac38; }
+
+.popup_login.weix img { width: 170px; height: 170px; margin-top: 30px; }
+
+.popup_login.weix a { color: #f56c65; text-decoration: underline; width: 100%; display: block; margin-top: 20px; }
+
+.popup_login.act { top: 50%; }
+
+.popup_pay { position: fixed; z-index: 10; width: 520px; height: auto; overflow: hidden; background: #fff; left: 50%; margin-left: -260px; top: -1000px; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+
+.popup_pay .close { position: absolute; top: 0; right: 0; cursor: pointer; width: 26px; height: 26px; background: url(../images/close.png?v=a52c0); }
+
+.popup_pay .title { width: 100%; height: 65px; border-bottom: solid 1px #ccc; text-align: center; line-height: 65px; font-size: 20px; color: #000; }
+
+.popup_pay ul { width: 400px; padding: 0 60px; height: auto; overflow: hidden; margin-top: 15px; }
+
+.popup_pay li { width: 100%; margin-top: 15px; border-bottom: solid 1px #ccc; padding-bottom: 25px; height: auto; position: relative; overflow: hidden; padding-top: 10px; }
+
+.popup_pay li:hover { background: #f5f5f5; }
+
+.popup_pay img { float: left; margin-left: 20px; }
+
+.popup_pay .text { float: left; width: 249px; margin-left: 20px; height: 45px; border-right: solid 1px #ccc; margin-top: 3px; font-size: 16px; color: #333; line-height: 20px; }
+
+.popup_pay .text span { font-size: 14px; color: #888; line-height: 25px; }
+
+.popup_pay i { width: 16px; height: 16px; background-image: url(../images/icon.png?v=23bbc); background-position: -25px -33px; display: inline-block; float: left; margin-top: 15px; margin-left: 30px; cursor: pointer; }
+
+.popup_pay i.act { background-position: -41px -33px; }
+
+.popup_pay .bot { width: 400px; margin: 40px auto; padding-bottom: 25px; border-bottom: solid 1px #ccc; height: auto; overflow: hidden; color: #666; }
+
+.popup_pay .bot p { float: left; width: 33%; text-align: center; }
+
+.popup_pay .bot span { color: #f56c65; }
+
+.popup_pay .submit_but { display: block; margin: 40px auto; width: 140px; height: 55px; background: #f56c65; text-align: center; line-height: 55px; color: #fff; border-radius: 5px; font-size: 16px; }
+
+.popup_pay.act { top: 100px; }
+
+.page_bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/opacity.png?v=a25cb); z-index: 5; display: none; }
+
+.page_bg.act { display: block; }
+
+/*适配*/
+@media screen and (max-width: 1200px) { .header .nav { width: 100%; }
+  .header .menu { margin-left: 50px; }
+  .footer foot_nav { width: 100%; }
+  .page_main { width: 100%; }
+  .result_cont .right_cont { margin-left: 50px; width: 450px; }
+  .result_cont .r_cont { width: 360px; }
+  .pay_title { text-indent: 20px; }
+  .pay_lists { width: 100%; padding: 0; }
+  .pay_lists .info { width: 70%; }
+  .pay_lists .l_text { width: 15%; text-align: left; }
+  .pay_lists .r_text { width: 85%; margin-left: 0; } }
+
+/*适配手机端*/
+@media screen and (max-width: 768px) { .mymenu { display: none; }
+  .header { background: #f56c65; height: 45px; }
+  .header .nav { width: 100%; }
+  .header .menu { display: none; }
+  .header .logo { margin-top: 5px; background-image: url(../images/logomini.png?v=68552); background-repeat: no-repeat; height: 40px; width: 115px; margin-left: 10px; }
+  .header .right_link { display: none; }
+  .header .nav-user { display: block; float: right; width: 32px; height: 32px; background-image: url(../images/user.png?v=66a61); margin: 7px 10px 0; }
+  .footer { height: 45px; }
+  .footer foot_nav { width: 100%; }
+  .footer ul, .footer p { text-align: center; line-height: 15px; width: 100%; clear: both; margin-top: 5px; }
+  .footer li:.first_child { margin-left: 30%; }
+  .gotop { bottom: 50px; }
+  .container { min-height: 500px; margin-top: 50px; }
+  .page_main { width: 100%; margin: 20px auto; }
+  .result_cont { margin-bottom: 20px; }
+  .result_cont .title { border-bottom: none; height: auto; overflow: hidden; padding-top: 15px; }
+  .result_cont .head { margin-left: 20px; line-height: 30px; }
+  .result_cont .icon { margin-top: 5px; }
+  .result_cont .text, .result_cont .r_text { float: left; width: 100%; line-height: 25px; }
+  .result_cont .left_cont, .result_cont .right_cont { float: none; width: 100%; height: auto; overflow: hidden; }
+  .result_cont .right_cont { margin-left: 0; }
+  .result_cont .l_text { width: 25%; }
+  .result_cont .r_cont { width: 75%; margin-left: 0; }
+  .pay_title { text-indent: 20px; }
+  .pay_lists { width: 100%; padding: 0; margin-top: 20px; }
+  .pay_lists li { padding-bottom: 20px; margin-top: 20px; }
+  .pay_lists img { width: 100%; float: none; }
+  .pay_lists .info { width: 95%; margin: 0 auto; float: none; }
+  .pay_lists .title { line-height: 25px; margin-top: 10px; }
+  .pay_lists .cont { height: auto; line-height: 25px; margin-top: 0; }
+  .pay_lists .l_text { width: 25%; }
+  .pay_lists .r_text { width: 75%; margin-left: 0; }
+  .popup_login { width: 94%; left: 0; margin-left: 3%; height: 340px; margin-top: -170px; }
+  .popup_login .title { height: 45px; line-height: 45px; }
+  .popup_pay { width: 94%; margin-left: 3%; left: 0; }
+  .popup_pay .title { height: 45px; line-height: 45px; }
+  .popup_pay ul { width: 100%; padding: 0; margin-top: 10px; }
+  .popup_pay li { margin-top: 5px; padding-bottom: 10px; }
+  .popup_pay img { margin-left: 10px; }
+  .popup_pay .text { width: 67%; margin-left: 10px; }
+  .popup_pay i { margin-left: 10px; }
+  .popup_pay .bot { margin: 15px auto; }
+  .popup_pay .submit_but { margin: 20px auto; } }

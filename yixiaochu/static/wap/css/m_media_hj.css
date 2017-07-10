@@ -1,0 +1,144 @@
+@charset "UTF-8";
+html { font-size: 50px; }
+
+body { font-size: 24px; }
+
+@media screen and (min-width: 320px) { html { font-size: 21.33px; }
+  body { font-size: 12px; } }
+
+@media screen and (min-width: 360px) { html { font-size: 24px; }
+  body { font-size: 12px; } }
+
+@media screen and (min-width: 375px) { html { font-size: 25px; }
+  body { font-size: 12px; } }
+
+@media screen and (min-width: 384px) { html { font-size: 25.6px; }
+  body { font-size: 14px; } }
+
+@media screen and (min-width: 400px) { html { font-size: 26.67px; }
+  body { font-size: 14px; } }
+
+@media screen and (min-width: 414px) { html { font-size: 27.6px; }
+  body { font-size: 14px; } }
+
+@media screen and (min-width: 424px) { html { font-size: 28.27px; }
+  body { font-size: 14px; } }
+
+@media screen and (min-width: 480px) { html { font-size: 32px; }
+  body { font-size: 15.36px; } }
+
+@media screen and (min-width: 540px) { html { font-size: 36px; }
+  body { font-size: 17.28px; } }
+
+@media screen and (min-width: 720px) { html { font-size: 48px; }
+  body { font-size: 23.04px; } }
+
+@media screen and (min-width: 750px) { html { font-size: 50px; }
+  body { font-size: 24px; } }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, section, article, aside, header, footer, nav, dialog, figure, hgroup { margin: 0; padding: 0; }
+
+input, select, textarea { font-size: 100%; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+fieldset, img { border: 0; }
+
+caption, th { text-align: left; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 500; }
+
+ul, ol, li { list-style: none; }
+
+em, i { font-style: normal; }
+
+a, img { -webkit-tap-highlight-color: transparent; }
+
+/* 首页 */
+.wap-banner { position: relative; height: 6rem; overflow-x: hidden;}
+
+.swiper-slide { text-align: center; font-size: 0.24rem; background: #fff; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+
+.swiper-slide img { width: 100%; height: 100%; }
+
+.swiper-slide .info { position: absolute; bottom: 0; left: 0; width: 100%; height: 1rem; background: url(../images/opacity4.png?v=f88fe); white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 0.48rem; color: #fff; line-height: 1rem; text-align: left; text-indent: 0.4rem; }
+
+.wap-search { width: 15rem; padding: 0.4rem; height: auto; overflow: hidden; background: #fff; }
+
+.wap-search input { width: 11.38rem; height: 1.36rem; background: #eef1f3; border: solid 1px #dbdbdb; line-height: 1.36rem; text-indent: 0.2rem; border-right: none; border-radius: 3px 0 0 3px; float: left; }
+
+.wap-search .search-but { float: left; width: 2.8rem; height: 1.36rem; background: #f39800 url(../images/search-but.png?v=7e22d) center center no-repeat; border-radius: 0 3px 3px 0; display: block; background-size: 0.88rem 0.88rem; }
+
+.wap-item { margin-top: 0.4rem; border-bottom: solid 1px #ccc; }
+
+.wap-item ul { padding: 0.6rem 0.4rem; background-color: #fff; overflow: hidden; }
+
+.wap-item a { display: block; width: 100%; height: 100%; text-decoration: none; }
+
+.wap-item .item-pic { width: 2.2rem; height: 2.2rem; border-radius: 100%; background-position: center center; background-repeat: no-repeat; }
+
+.wap-item .item-name { margin-top: 0.48rem; font-size: 0.44rem; text-align: center; overflow: hidden; color: #454545; }
+
+.wap-item li { float: left;     margin: 0 1.2rem; }
+
+.wap-item li:nth-child(1) .item-pic { background-color: #47bcf4; background-image: url(../images/mmedia_icon1.png?v=871c5); background-size: 0.98rem 0.76rem; }
+
+.wap-item li:nth-child(2) .item-pic { background-color: #ffc426; background-image: url(../images/mmedia_icon2.png?v=65f08); background-size: 0.92rem 0.92rem; }
+
+.wap-item li:nth-child(3) .item-pic { background-color: #92cf61; background-image: url(../images/m_icon4.png?v=c8b67); background-size: 1rem 1rem; }
+
+.wap-item li:nth-child(4) .item-pic { background-color: #f34c3f; background-image: url(../images/mmedia_icon4.png?v=728a3); background-size: 0.96rem 0.96rem; }
+
+.news-box .t_news b { background: #f39800; border-radius: 3px; }
+
+.news-box .t_news { margin: 0.4rem 0; }
+
+.index-title { width: 15rem; margin-top: 0.5rem; font-size: 0.6rem; color: #000; background: #fff; padding: 0.4rem; border-bottom: solid 1px #ccc; }
+
+.index-title i { width: 0.2rem; height: 0.5rem; background: #f39800; display: inline-block; margin-right: 0.2rem; }
+
+.index-title span { float: right; }
+
+.index-media { width: 15rem; padding: 0.4rem; height: auto; overflow: hidden; background: #fff; }
+
+.media-list { width: 6.9rem; margin: 0.4rem 0.4rem 0 0; height: 4rem; float: left; position: relative; }
+
+.media-list:nth-child(2n) { margin-right: 0; }
+
+.media-list img { height: 4rem; width: 6.9rem; }
+
+.media-list .infor { position: absolute; top: 0; left: 0; height: 4rem; width: 6.9rem; text-align: center; padding: 1rem 0; background: url(../images/opacity4.png?v=f88fe); }
+
+.media-list .infor i { display: inline-block; width: 1.12rem; height: 1.1rem; background-image: url(../images/m-video.png?v=56e88); background-size: 1.12rem 1.1rem; }
+
+.media-list .infor p { font-size: 0.56rem; color: #fff; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 1rem; }
+
+.index-lists { width: 15rem; height: auto; overflow: hidden; }
+
+.index-listcont { width: 15rem; height: auto; overflow: hidden; border-bottom: solid 1px #ddd; background: #fff; }
+
+.index-listcont ul { padding: 0.4rem; }
+
+.index-listcont .check-more { display: block; width: 100%; height: 1rem; text-align: center; line-height: 1rem; color: #00a0e9; font-size: 0.56rem; clear: both; margin-bottom: 10px;}
+
+.buy-list { width: 100%; padding-bottom: 0.4rem; margin-top: 0.4rem; border-bottom: solid 1px #ccc; height: auto; overflow: hidden; }
+
+.buy-list .list-img { float: left; position: relative; }
+
+.buy-list .list-img img { width: 4.4rem; height: 3.6rem; }
+
+.buy-list .list-img i { position: absolute; top: 0; left: 0; display: inline-block; width: 1.78rem; height: 1.78rem; background-image: url(../images/mindex_icon.png?v=d7828); background-size: 1.78rem 1.78rem; background-repeat: no-repeat; }
+
+.buy-list .list-cont { width: 9.4rem; float: right; }
+
+.buy-list .list-cont .title { width: 100%; font-size: 0.68rem; color: #000; line-height: 1rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.buy-list .list-cont .title p { float: right; }
+
+.buy-list .list-cont .title span { font-size: 0.72rem; color: #f39800; }
+
+.buy-list .list-cont .text { font-size: 0.48rem; color: #999; line-height: 0.8rem; overflow: hidden; height: 1.6rem; }
+
+.buy-list .list-cont .text1 { font-size: 0.44rem; color: #999; line-height: 0.8rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+/* 首页 结束 */

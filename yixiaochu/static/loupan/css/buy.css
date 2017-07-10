@@ -1,0 +1,90 @@
+@charset "UTF-8";
+p { -webkit-margin-before: 0; -webkit-margin-after: 0; }
+
+.container { padding-bottom: 80px; background: #fff; }
+
+/*banner*/
+.banner { width: 100%; position: relative; height: 400px; }
+
+.banner img { width: 100%; height: 400px; }
+
+.page-main { width: 1200px; height: auto; overflow: hidden; margin: 0 auto; }
+
+.buy-title { width: 100%; height: 20px; margin-top: 40px; }
+
+.buy-title p { height: 20px; float: left; padding-left: 15px; border-left: solid 4px #dca924; font-size: 18px; line-height: 20px; color: #010101; }
+
+.buy-title .more { display: block; float: right; width: 18px; height: 18px; background: url(../images/buy_more.png?v=1ff25); }
+
+.buy-title ul { float: left; margin-left: 10px; }
+
+.buy-title li { float: left; margin-right: 40px; }
+
+.buy-title li a { color: #666; line-height: 20px; }
+
+.buy-title li a.act, .buy-title li a:hover { color: #dca924; }
+
+.page-cont { width: 100%; height: auto;  overflow: hidden; }
+
+.page-left { float: left; width: 795px; }
+
+.page-right { float: right; width: 385px; }
+
+/*楼盘列表*/
+.premises { width: 100%; height: auto; overflow: hidden; }
+
+.premises li { width: 387px; height: 345px; background: #f4f4f4; float: left; margin: 20px 19px 0 0; position: relative; border-radius: 5px; overflow: hidden;}
+
+.premises img { width: 387px; height: 232px; }
+
+.premises .info { position: absolute; width: 100%; height: 35px; background: url(../images/opacity4.png?v=f88fe); top: 197px; }
+
+.premises .info p { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 35px; }
+
+.premises .info .l { text-indent: 15px; color: #fff; width: 270px; }
+
+.premises .info .r { color: #dca924; padding-right: 10px; width: 100px; text-align: right; }
+
+.premises .icon { width: 365px; margin: 0 auto; height: 25px; overflow: hidden; }
+
+.premises .icon span { float: left; color: #fff; padding: 2px 5px; background: #e0a0a0; margin: 5px 10px 0 0; font-size: 12px; }
+
+.premises .time { color: #666; width: 365px; margin: 10px auto; padding-bottom: 15px; border-bottom: solid 1px #ddd; }
+
+.premises .addres { width: 365px; margin: 0 auto; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color: #666; }
+
+.right-tip { width: 385px; position: relative; margin-top: 20px; height: 232px; border-radius: 5px; overflow: hidden;}
+
+.right-tip img { width: 385px; height: 232px; }
+
+.right-tip i { position: absolute; top: 0; left: 0; color: #fff; background: #ffbe14; padding: 3px 10px; }
+
+.right-tip .info { position: absolute; bottom: 0; left: 0; width: 100%; height: 35px; background: url(../images/opacity4.png?v=f88fe); line-height: 35px; text-indent: 10px; color: #fff; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.dynamic { width: 100%; height: auto; overflow: hidden; }
+
+.dynamic li { float: left; position: relative; margin: 20px 19px 0 0; width: 183px; height: 108px; border-radius: 5px; overflow: hidden;}
+
+.dynamic img { width: 183px; height: 108px; }
+
+.dynamic .info { position: absolute; bottom: 0; left: 0; width: 100%; height: 35px; background: url(../images/opacity4.png?v=f88fe); line-height: 35px; text-indent: 10px; color: #fff; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.news-text { width: 100%; height: auto; }
+
+.news-text li { margin-top: 13px; }
+
+.news-text a { width: 100%; display: block; color: #666; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.news-text a:hover { color: #dca924; }
+
+.news-lists { width: 100%; height: auto; overflow: hidden; }
+
+.news-lists li { width: 100%; height: 100px; margin-top: 20px; background: #f4f4f4; cursor: pointer; border-radius: 5px; overflow: hidden;}
+
+.news-lists img { float: left; height: 100px; width: 170px; }
+
+.news-lists .birfe { float: right; width: 195px; padding: 10px; height: 80px; }
+
+.news-lists .title { color: #000; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.news-lists .text { width: 100%; color: #666; line-height: 20px; padding-top: 5px; height: 60px; overflow: hidden; }

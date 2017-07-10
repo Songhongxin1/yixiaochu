@@ -1,0 +1,44 @@
+.alert_dialog ul .staggered-transition {
+  transition: all 0.5s ease;
+  overflow: hidden;
+  margin: 0.5em;
+  height: 20px;
+}
+.alert_dialog ul .staggered-enter, .staggered-leave {
+  transition: all 0.5s ease;
+  opacity: 0;
+  height: 0;
+}
+
+.alert_dialog{
+	position: fixed;
+	right: -140px;
+	top: 50%;
+	margin-top: -220px;
+	height: 440px;
+	left: 0px;
+}
+.alert_dialog ul{
+	position: fixed;
+	z-index: 9999;
+	top: 4em;
+	left: .5em;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+}
+.alert_dialog ul li{
+	cursor: pointer;
+	padding: .5em .8em;
+	margin: .5em;
+	color: #fff;
+	font-size: .8em;
+	background-color: #f56c65;
+}
+
+.alert_dialog ul .err{
+  background-color: #f56c65;
+}
+
+.alert_dialog ul .normal{
+  background-color: #0a9e0a;
+}

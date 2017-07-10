@@ -1,0 +1,183 @@
+.container { background: #fff; padding-bottom: 50px; }
+
+.about-banner { width: 100%; height: auto; overflow: hidden; position: relative; }
+
+.about-banner img { width: 100%; }
+
+.banner-cont { width: 1180px; position: absolute; left: 50%; margin-left: -590px; top: 0; padding-top: 85px; text-align: center; }
+
+.banner-cont img { width: 599px; }
+
+.banner-cont a { display: block; width: 250px; height: 60px; margin: 30px auto; background: #f39800; border-radius: 5px; color: #fff; line-height: 60px; font-size: 28px; }
+
+.about-nav { width: 100%; height: 69px; border-bottom: solid 1px #dcdcdc; }
+
+.nav-cont { width: 1180px; height: auto; margin: 0 auto; }
+
+.nav-cont a { float: left; display: block; font-size: 20px; color: #5b5b5b; line-height: 68px; padding: 0 40px; }
+
+.nav-cont a:hover { color: #00a0e9; }
+
+.nav-cont .act { color: #00a0e9; border-bottom: solid 3px #00a0e9; }
+
+.page-main { width: 1180px; height: auto; /*overflow: hidden;*/ margin: 10px auto; position: relative; }
+
+.about-left { float: left; margin-left: 30px; padding-top: 60px; }
+
+.about-left .title { font-size: 30px; color: #f39800; }
+
+.about-left .title span { color: #00a0e9; }
+
+.about-left .text { font-size: 14px; color: #636363; line-height: 40px; margin: 25px 0 90px 0; }
+
+.about-right { position: absolute; right: 75px; top: 35px; width: 515px; height: 457px; background: url(../images/about_p1.png?v=0c963); }
+
+.about-right p { position: absolute; }
+
+.about-right .t-white { font-size: 18px; color: #fff; font-weight: bold; }
+
+.about-right .t-yellow { font-size: 16px; color: #ff9f00; }
+
+.about-right .t-red { font-size: 36px; color: #ff0000; font-weight: bold; }
+
+.about-right .t1 { top: 45px; left: 230px; }
+
+.about-right .t2 { top: 220px; left: 135px; }
+
+.about-right .t3 { top: 220px; left: 330px; }
+
+.about-right .t4 { top: 390px; left: 30px; }
+
+.about-right .t5 { top: 390px; left: 230px; }
+
+.about-right .t6 { top: 390px; left: 430px; }
+
+.about-right .t7 { top: 225px; left: 220px; }
+
+.about-right .t8 { top: 275px; left: 205px; }
+
+.about-right .t9 { top: 375px; left: 140px; }
+
+.about-right .t10 { top: 375px; left: 340px; }
+
+.contact-title { font-size: 14px; color: #7c7c7c; line-height: 15px; height: 15px; margin-left: 20px; padding-top: 35px; }
+
+.contact-cont { width: 100%; height: auto; overflow: hidden; }
+
+.left-cont { float: left; margin-left: 20px; margin-top: 20px; }
+
+.left-cont.act { margin-left: 170px; }
+
+.left-cont .title { font-size: 16px; color: #090909; height: 20px; line-height: 20px; margin-top: 25px; }
+
+.left-cont .title i { display: inline-block; width: 17px; background: url(../images/contact.png?v=b1582); margin-right: 13px; float: left; margin-top: 2px; height: 13px; }
+
+.left-cont .text { font-size: 14px; color: #636363; margin-top: 10px; margin-left: 30px; }
+
+.left-cont .tel i { height: 16px; background-position: 0 0; }
+
+.left-cont .eml i { background-position: 0 -16px; margin-top: 5px; }
+
+.left-cont .weix i { background-position: 0 -29px; height: 16px; width: 18px; }
+
+.left-cont .emal i { background-position: 0 -47px; margin-top: 5px; }
+
+.left-cont .email i { background-position: -18px 0; margin-top: 5px; }
+
+.left-cont .time i { background-position: -18px -15px; margin-top: 2px; height: 17px; }
+
+.left-cont .adres i { background-position: -18px -32px; height: 19px; }
+
+.left-cont .swape i { background-position: -18px -51px; height: 16px; }
+
+.address { float: right; margin-right: 20px; margin-top: 45px; }
+
+.line { width: 100%; height: 1px; background: #dcdcdc; margin-top: 20px; }
+
+.ewm-cont { float: right; margin-right: 70px; margin-top: 25px; }
+
+.ewm-cont img { width: 125px; height: 125px; }
+
+.help-title { font-size: 16px; color: #090909; line-height: 25px; margin-top: 40px; height: 25px; }
+
+.help-title.act { margin-top: 70px; }
+
+.help-text { font-size: 14px; color: #636363; line-height: 30px; }
+
+.help-cont { width: 100%; height: auto; overflow: hidden; position: relative; }
+
+.help-cont.act { padding: 65px 0 135px 0; }
+
+.help-cont p {font-size: 14px; color: #636363; line-height: 30px;}
+
+.help-img1 { float: left; margin: 30px 0 100px 35px; }
+
+.help-right { float: left; margin-left: 75px; margin-top: 40px; }
+
+.help-right .text-title { font-size: 26px; font-weight: bold; line-height: 30px; margin-top: 25px; color: #6acdf3; }
+
+.help-right .text-title i { display: inline-block; float: left; width: 23px; height: 24px; background: url(../images/help_icon.png?v=a39d5); margin-right: 15px; margin-top: 3px; }
+
+.help-right .title1 { color: #f7bc67; }
+
+.help-right .title1 i { background-position: 0 -24px; }
+
+.help-right .title2 { color: #c7f161; }
+
+.help-right .title2 i { background-position: 0 -48px; }
+
+.help-right .righe-text { font-size: 20px; color: #1b1b1b; line-height: 45px; margin-left: 40px; }
+
+.help-right span { color: #d60e76; font-weight: bold; }
+
+.cont1 { text-align: center; }
+
+.cont1 p { position: absolute; }
+
+.cont1 .title { font-size: 32px; font-weight: bold; color: #494949; width: 45px; top: 170px; }
+
+.cont1 .text1 { left: 66px; }
+
+.cont1 .text2 { right: 66px; }
+
+.cont1 .text { font-size: 20px; font-weight: bold; }
+
+.cont1 .text3 { color: #9ed21e; top: 115px; left: 245px; }
+
+.cont1 .text4 { color: #33b5e7; top: 115px; left: 795px; }
+
+.cont1 .text5 { color: #bc7af4; top: 370px; left: 250px; }
+
+.cont1 .text6 { color: #dfb71e; top: 370px; left: 820px; }
+
+.help-list { position: relative; width: 212px; height: 212px; background: url(../images/help_p3.png?v=86c58); margin-left: 110px; float: left; }
+
+.help-list p { position: absolute; }
+
+.help-list .text1 { font-size: 20px; color: #2d2d2d; }
+
+.help-list .text3 { font-weight: bold; font-size: 22px; top: 225px; left: 65px; }
+
+.list1 { background-position: 0 0; }
+
+.list1 .text1 { top: 10px; left: 120px; width: 150px; }
+
+.list1 .text2 { font-size: 20px; color: #07aeed; font-weight: bold; top: 40px; left: 155px; }
+
+.list1 .text3 { color: #07aeed; }
+
+.list2 { background-position: -212px 0; }
+
+.list2 .text1 { top: 8px; left: 120px; width: 150px; }
+
+.list2 .text2 { font-size: 20px; color: #2d2d2d; top: 35px; left: 155px; width: 145px; }
+
+.list2 span { font-weight: bold; color: #8dc409; }
+
+.list2 .text3 { color: #8dc409; }
+
+.list3 { background-position: -424px 0; }
+
+.list3 .text1 { top: 8px; left: 120px; width: 150px; text-align: center; }
+
+.list3 .text3 { color: #feb64f; }

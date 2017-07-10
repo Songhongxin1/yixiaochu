@@ -1,0 +1,78 @@
+.page_main { padding-top: 40px; }
+
+.out { position: relative; width: 860px; height: 300px; float: left; }
+
+.out .img li { position: absolute; top: 0; left: 0; }
+
+.out .img li img { width: 860px; height: 300px; }
+
+.out .num { position: absolute; bottom: 10px; right: 5px; width: auto; }
+
+.out .num li { width: 15px; height: 15px; display: inline-block; background-color: #fff; border-radius: 50%; margin: 0 10px; cursor: pointer; border: solid 1px #ccc; }
+
+.out .num li.active { background-color: #49c29d; border: solid 1px #49c29d; }
+
+.story { float: right; width: 300px; height: 300px; background: #fff; }
+
+.story .title { width: 100%; height: 50px; line-height: 50px; background: url(../images/edit.png?v=beb11) 15px center no-repeat; font-size: 18px; color: #666; text-indent: 50px; }
+
+.story a { float: right; width: 45px; height: 20px; margin: 15px 10px 0; font-size: 12px; color: #999; border: solid 1px #ccc; border-radius: 3px; line-height: 18px; text-align: center; display: block; text-indent: 0; }
+
+.story img { width: 100%; height: 125px; }
+
+.story .s_title { color: #333; text-indent: 20px; margin: 15px 0 10px 0; line-height: 20px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.story .s_text { width: 260px; height: 60px; overflow: hidden; padding: 0 20px; font-size: 12px; line-height: 20px; color: #666; }
+
+.index_tip { width: 100%; height: auto; margin: 35px 0; }
+
+.index_tip img { width: 100%; }
+
+.index_nav { width: 100%; height: 50px; }
+
+.index_nav .title { font-size: 30px; color: #000; float: left; line-height: 50px; }
+
+.index_nav ul { float: left; margin: 15px 0 0 80px; }
+
+.index_nav li { float: left; margin-right: 3px; padding: 5px 15px; border-radius: 4px; color: #666; cursor: pointer; }
+
+.index_nav li:hover, .index_nav li.act { background: #49c29d; color: #fff; }
+
+.foods_lists { width: 100%; min-height: 310px; overflow: hidden; margin-bottom: 100px; }
+
+.foods_lists li { float: left; width: 578px; height: 268px; border: solid 1px #f3f3f3; background: #fff; margin: 40px 40px 0 0; cursor: pointer; }
+
+.foods_lists li:hover { border: solid 1px #f56c65; }
+
+.foods_lists img { width: 280px; height: 100%; }
+
+.foods_lists .detail { float: right; width: 298px; height: 100%; }
+
+.foods_lists .title { width: 100%; height: 50px; border-bottom: solid 1px #ccc; font-size: 18px; color: #000; line-height: 50px; text-indent: 15px; }
+
+.foods_lists .cont { color: #666; font-size: 14px; padding-left: 15px; }
+
+.foods_lists .price { float: right; font-size: 24px; color: #e44036; margin-right: 10px; }
+
+.foods_lists .text { width: 268px; height: 22px; line-height: 20px; overflow: hidden; padding: 10px 15px; font-size: 12px; color: #666; }
+
+.foods_lists .text a { color: #e44036; }
+
+.foods_lists .bot { width: 100%; height: 32px; margin-top: 8px; }
+
+.foods_lists .destine { display: block; width: 90px; height: 32px; background: #f56c65; float: right; color: #fff; line-height: 32px; text-align: center; }
+
+.foods_lists .bot span { float: right; line-height: 32px; margin-right: 10px; color: #999; font-size: 12px; }
+
+.wrapper {  max-width: 260px; position: relative; margin-left: 15px; margin-top: 10px; }
+.slider_wrapper {width: 100%; overflow-y: auto;  position: relative; height: 125px;}
+.slide { text-align: center; line-height: 20px; float: left; list-style: none; position: relative; width: 80px; margin-right: 10px;}
+.slide img {width: 80px; height: 80px;}
+
+.bx_prev { width: 14px; height: 17px; background-image: url(../images/icon.png?v=23bbc); background-position: -66px 0; display: inline-block; position: absolute; top: 15px; right: -20px; }
+
+.bx_next { width: 14px; height: 17px; background-image: url(../images/icon.png?v=23bbc); background-position: -80px 0; display: inline-block; position: absolute; top: 40px; right: -20px; }
+
+.page_bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/opacity.png?v=a25cb); z-index: 5; display: none; }
+
+.page_bg.act { display: block; }

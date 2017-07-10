@@ -1,0 +1,1 @@
+<?phpif (!defined('BASEPATH')) exit('No direct script access allowed');/** * 套餐表分类 * @author chaokai@gz-zc.cn * */class Model_combo_cate extends MY_Model{        private $_table = 't_combo_cate';        public function __construct(){                parent::__construct($this->_table);    }}
